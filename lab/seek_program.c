@@ -4,8 +4,9 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-main()
+int main()
 {
   char *c;
   int fd, sz, i;
@@ -43,4 +44,6 @@ main()
 
   i = lseek(fd, -1, SEEK_SET);
   perror("l1");
+
+  return 0;
 }
