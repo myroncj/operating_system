@@ -5,7 +5,6 @@
 #include<fcntl.h>
 #include<unistd.h>
 #include<stdlib.h>
-
 int main()
 {
 	int ch,fd1;
@@ -39,7 +38,7 @@ int main()
 			fd1=open(txt,O_RDONLY);
 			printf("\n Information about the file: ");
 			while(read(fd1,txt,50)>0)
-				write(STDOUT_FILENO,txt,100);
+				write(STDOUT_FILENO,txt,5);
 			close(fd1);
 			break;
 			
